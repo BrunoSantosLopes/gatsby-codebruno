@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: BrunoSantosLopes/gatsby-codebruno
+  branch: main
 
 media_folder: static/assets
 public_folder: assets
