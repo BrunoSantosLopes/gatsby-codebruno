@@ -4,10 +4,9 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-module.exports = {
-  /* Your site config here */
+ module.exports = {
   plugins: [
-    'gatsby-plugin-netlify-cms',
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,4 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`
   ],
+  flags: {
+    DEV_SSR: false
+  }
 }
